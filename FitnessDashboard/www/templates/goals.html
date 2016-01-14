@@ -1,0 +1,32 @@
+<ion-view view-title="Goals">
+  <ion-content>
+    <h1><i>Goals will go here.</i></h1>
+    	
+    	<ion-list>
+		   <ion-item class="item-div&quot;" ng-repeat="goal in goals" href="">
+		    	<ion-card>
+
+				  <ion-card-header>
+				    {{ goal.name }}
+				  </ion-card-header>
+				  
+				  <ion-card-content>
+				    
+				  	Initial: {{ goal.initial }}
+				  	<br />
+
+				  	Current: {{ goal.current }}
+				  	<br />
+
+				  	Target: {{ goal.target }}
+				  	<br />
+
+				  </ion-card-content>
+
+				</ion-card>
+		   </ion-item>
+		 </ion-list>
+
+
+  </ion-content>
+</ion-view>
