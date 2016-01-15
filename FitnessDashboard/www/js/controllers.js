@@ -55,7 +55,7 @@ angular.module('starter.controllers', [])
 .controller('PlaylistCtrl', function($scope, $stateParams) {
 })
 
-.controller('GoalsCtrl', function($scope, $stateParams){
+.controller('GoalsCtrl', function($scope, $stateParams, $http){
 
   $scope.goals = [
   {
@@ -67,15 +67,14 @@ angular.module('starter.controllers', [])
   {
     name:"One Mile Time",
     initial:8,
-    current:7,
+    current:"",
     target:6
   }
   ];
-          // $http.get('http://www.robreinold.com/fitness/assets/json/1MileTimes.json').success(function(data) {
+           $http.get('http://www.robreinold.com/fitness/assets/json/1MileTimes.json').success(function(data) {
 
-          //   $scope[1].current = data[data.length - 1].Time;
+             $scope.goals[1].current = data[data.length - 1].Time;
 
-          // });
-
+           });
 
 });
