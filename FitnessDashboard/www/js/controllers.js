@@ -41,20 +41,6 @@ angular.module('starter.controllers', [])
   };
 })
 
-.controller('PlaylistsCtrl', function($scope) {
-  $scope.playlists = [
-    { title: 'Reggae', id: 1 },
-    { title: 'Chill', id: 2 },
-    { title: 'Dubstep', id: 3 },
-    { title: 'Indie', id: 4 },
-    { title: 'Rap', id: 5 },
-    { title: 'Cowbell', id: 6 }
-  ];
-})
-
-.controller('PlaylistCtrl', function($scope, $stateParams) {
-})
-
 .controller('GoalsCtrl', function($scope, $stateParams, $http){
 
   $scope.goals = [
@@ -69,6 +55,24 @@ angular.module('starter.controllers', [])
     initial:8,
     // current
     target:6
+  },
+  {
+    name:"Percent Body Fat",
+    initial:15.7,
+    current:13.9,
+    target:12.0
+  },
+  {
+    name:"Free Throw Percentage",
+    initial:"40%",
+    current:"44%",
+    target:"60%"
+  },
+  {
+    name:"Pull Ups",
+    initial:10,
+    current:10,
+    target:20
   }
   ];
            $http.get('https://api.myjson.com/bins/1ib4l').success(function(data) {
