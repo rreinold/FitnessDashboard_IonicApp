@@ -71,8 +71,7 @@ angular.module('starter.controllers', [])
     target:6
   }
   ];
-           $http.get('http://www.robreinold.com/fitness/assets/json/1MileTimes.json').success(function(data) {
-
+           $http.get('https://api.myjson.com/bins/1ib4l').success(function(data) {
              $scope.goals[1].current = data[data.length - 1].Time;
 
            });
