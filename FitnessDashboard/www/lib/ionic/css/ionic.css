@@ -6574,8 +6574,8 @@ button.item.item-button-right {
   font-weight: bold; }
 
 .card.list .list-item {
-  padding-right: 10px;
-  padding-left: 10px; }
+  padding-right: 1px;
+  padding-left: 1px; }
 
 /**
  * Cards and Inset Lists

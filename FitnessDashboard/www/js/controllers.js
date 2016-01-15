@@ -70,5 +70,12 @@ angular.module('starter.controllers', [])
     current:7,
     target:6
   }
-  ]
+  ];
+          // $http.get('http://www.robreinold.com/fitness/assets/json/1MileTimes.json').success(function(data) {
+
+          //   $scope[1].current = data[data.length - 1].Time;
+
+          // });
+
+
 });
