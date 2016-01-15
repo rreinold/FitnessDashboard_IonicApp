@@ -67,7 +67,7 @@ angular.module('starter.controllers', [])
   {
     name:"One Mile Time",
     initial:8,
-    current:"",
+    // current
     target:6
   }
   ];

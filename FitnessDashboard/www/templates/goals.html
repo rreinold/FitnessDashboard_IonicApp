@@ -1,32 +1,24 @@
 <ion-view view-title="Goals">
   <ion-content>
-    <h1><i>Goals will go here.</i></h1>
+    <h1><i>  Goals will go here.</i></h1>
     	
-    	<ion-list>
-		   <ion-item class="item-div&quot;" ng-repeat="goal in goals" href="">
-		    	<ion-card>
 
-				  <ion-card-header>
-				    {{ goal.name }}
-				  </ion-card-header>
-				  
-				  <ion-card-content>
-				    
-				  	Initial: {{ goal.initial }}
-				  	<br />
 
-				  	Current: {{ goal.current }}
-				  	<br />
+    	<div class="card" ng-repeat="goal in goals">
+		  <div class="item item-divider" >
+		    {{ goal.name }}
+		  </div>
+		  <div class="item item-text-wrap">
+	    		Initial: {{ goal.initial }}
+			  	<br />
 
-				  	Target: {{ goal.target }}
-				  	<br />
+			  	Current: {{ goal.current }}
+			  	<br />
 
-				  </ion-card-content>
-
-				</ion-card>
-		   </ion-item>
-		 </ion-list>
-
+			  	Target: {{ goal.target }}
+			  	<br />
+		  </div>
+		</div>
 
   </ion-content>
 </ion-view>
